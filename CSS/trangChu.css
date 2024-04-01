@@ -1,0 +1,136 @@
+header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0;
+  text-align: center;
+}
+nav {
+  background-color: #666;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+nav ul {
+  list-style-type: none;
+}
+
+/* CSS cho danh mục */
+/* CSS cho menu */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.menu li ul {
+  display: none;
+  position: absolute;
+  background-color: #666;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.378);
+  z-index: 1;
+  padding: 0;
+}
+.menu li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.menu li:hover ul {
+  display: block;
+}
+
+.menu li ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.menu a {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.menu a:hover {
+  background-color: #666;
+}
+/*  */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0px;
+  align-items: center;
+}
+.text {
+  margin-right: 20px;
+}
+
+.image {
+  max-width: 200px;
+  height: auto;
+}
+.book {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.268);
+}
+.book img {
+  max-width: 160px;
+  height: auto;
+  border-radius: 5px;
+}
+.book h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.book p {
+  font-size: 14px;
+  color: #666;
+}
+/* CSS cho ô tìm kiếm */
+.search-container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+  text-align: center;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 1px;
+}
