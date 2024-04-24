@@ -1,0 +1,51 @@
+.movie-grid {
+  display: flex;
+  gap: 40px;
+}
+
+.movie-card {
+  border: 1px solid #ccc;
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  flex: 1;
+  max-width: 250px; /* Điều chỉnh kích thước của thẻ */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.73);
+  margin-bottom: 50px;
+}
+
+.movie-card:hover .movie-info {
+  transform: translateY(0);
+}
+
+.movie-img {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 150%; /* Tạo tỉ lệ ảnh 4:3 */
+}
+
+.movie-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Chèn hết khung hình */
+}
+
+.movie-info {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.movie-info h3 {
+  margin-top: 25px;
+}
+
+.movie-info p {
+  margin: 10px 0;
+}

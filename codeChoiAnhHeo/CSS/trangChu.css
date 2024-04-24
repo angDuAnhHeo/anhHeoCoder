@@ -1,0 +1,21 @@
+.book {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.268);
+}
+.book img {
+  max-width: 160px;
+  height: auto;
+  border-radius: 5px;
+}
+.book h2 {
+  font-size: 20px;
+  margin-top: 10px;
+}
+.book p {
+  font-size: 14px;
+  color: #666;
+}
